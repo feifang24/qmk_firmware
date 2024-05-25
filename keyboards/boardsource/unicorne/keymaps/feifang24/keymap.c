@@ -29,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {[0] = LAYOUT_split
                                                                   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
                                                                   KC_LOPT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_UP, KC_L, KC_VOLD,
                                                                   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-                                                                  KC_LCMD, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_LEFT, KC_DOWN, KC_RGHT, KC_MPLY,
+                                                                  KC_LCMD, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_LEFT, KC_DOWN, KC_RGHT, KC_ENT,
                                                                   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                                                   KC_ESC, KC_CAPS, KC_LSFT, KC_SPC, KC_BSPC, KC_DEL
                                                                   //`--------------------------'  `--------------------------'
@@ -326,7 +326,7 @@ const uint16_t PROGMEM spc_del_ins[] = {KC_BSPC, KC_DEL, COMBO_END};
 // Additional media keys
 const uint16_t PROGMEM p_volu_mprv[]    = {KC_P, KC_VOLU, COMBO_END};
 const uint16_t PROGMEM l_vold_mnxt[]    = {KC_L, KC_VOLD, COMBO_END};
-const uint16_t PROGMEM rght_mply_mute[] = {KC_RGHT, KC_MPLY, COMBO_END};
+const uint16_t PROGMEM rght_mply_mute[] = {KC_RGHT, KC_ENT, COMBO_END};
 
 // Mouse keys
 const uint16_t PROGMEM m_left_btn1[]      = {KC_M, KC_LEFT, COMBO_END};
