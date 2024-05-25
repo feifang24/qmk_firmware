@@ -33,11 +33,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {[0] = LAYOUT_split
 
                                                               [1] = LAYOUT_split_3x6_3(
                                                                   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-                                                                  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_1, KC_2, KC_3, KC_TRNS, KC_TRNS,
+                                                                  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_7, KC_8, KC_9, KC_TRNS, KC_TRNS,
                                                                   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
                                                                   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_4, KC_5, KC_6, KC_TRNS, KC_TRNS,
                                                                   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-                                                                  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_7, KC_8, KC_9, KC_TRNS, KC_TRNS,
+                                                                  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_1, KC_2, KC_3, KC_TRNS, KC_TRNS,
                                                                   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                                                   TO(0), KC_TRNS, KC_TRNS, KC_TRNS, KC_0, KC_TRNS
                                                                   //`--------------------------'  `--------------------------'
@@ -248,8 +248,8 @@ const uint16_t PROGMEM numdot[]  = {KC_6, KC_L, COMBO_END};
 const uint16_t PROGMEM numcomm[] = {KC_5, KC_6, COMBO_END};
 const uint16_t PROGMEM numcoln[] = {KC_4, KC_6, KC_L, COMBO_END};
 const uint16_t PROGMEM numscln[] = {KC_4, KC_5, KC_6, COMBO_END};
-const uint16_t PROGMEM numquot[] = {KC_2, KC_6, COMBO_END};
-const uint16_t PROGMEM numdquo[] = {KC_1, KC_6, COMBO_END};
+const uint16_t PROGMEM numquot[] = {KC_8, KC_6, COMBO_END};
+const uint16_t PROGMEM numdquo[] = {KC_7, KC_6, COMBO_END};
 
 // Basic math symbols
 const uint16_t PROGMEM y_u_eql[]    = {KC_Y, KC_U, COMBO_END};
@@ -257,10 +257,10 @@ const uint16_t PROGMEM h_j_mins[]   = {KC_H, KC_J, COMBO_END};
 const uint16_t PROGMEM h_j_k_plus[] = {KC_H, KC_J, KC_K, COMBO_END};
 const uint16_t PROGMEM n_m_unds[]   = {KC_N, KC_M, COMBO_END};
 // Number layer
-const uint16_t PROGMEM y_1_eql[]    = {KC_Y, KC_1, COMBO_END};
+const uint16_t PROGMEM y_1_eql[]    = {KC_Y, KC_7, COMBO_END};
 const uint16_t PROGMEM h_4_mins[]   = {KC_H, KC_4, COMBO_END};
 const uint16_t PROGMEM h_4_5_plus[] = {KC_H, KC_4, KC_5, COMBO_END};
-const uint16_t PROGMEM n_7_unds[]   = {KC_N, KC_7, COMBO_END};
+const uint16_t PROGMEM n_7_unds[]   = {KC_N, KC_1, COMBO_END};
 
 // Parentheses
 const uint16_t PROGMEM bspc_u_lbrc[]    = {KC_BSPC, KC_U, COMBO_END};
@@ -270,12 +270,12 @@ const uint16_t PROGMEM bspc_k_rprn[]    = {KC_BSPC, KC_K, COMBO_END};
 const uint16_t PROGMEM bspc_m_lcbr[]    = {KC_BSPC, KC_M, COMBO_END};
 const uint16_t PROGMEM bspc_LEFT_rcbr[] = {KC_BSPC, KC_LEFT, COMBO_END};
 // Number layer
-const uint16_t PROGMEM bspc_1_lbrc[] = {KC_BSPC, KC_1, COMBO_END};
-const uint16_t PROGMEM bspc_2_rbrc[] = {KC_BSPC, KC_2, COMBO_END};
+const uint16_t PROGMEM bspc_1_lbrc[] = {KC_BSPC, KC_7, COMBO_END};
+const uint16_t PROGMEM bspc_2_rbrc[] = {KC_BSPC, KC_8, COMBO_END};
 const uint16_t PROGMEM bspc_4_lprn[] = {KC_BSPC, KC_4, COMBO_END};
 const uint16_t PROGMEM bspc_5_rprn[] = {KC_BSPC, KC_5, COMBO_END};
-const uint16_t PROGMEM bspc_7_lcbr[] = {KC_BSPC, KC_7, COMBO_END};
-const uint16_t PROGMEM bspc_8_rcbr[] = {KC_BSPC, KC_8, COMBO_END};
+const uint16_t PROGMEM bspc_7_lcbr[] = {KC_BSPC, KC_1, COMBO_END};
+const uint16_t PROGMEM bspc_8_rcbr[] = {KC_BSPC, KC_2, COMBO_END};
 
 // Symbols
 const uint16_t PROGMEM m_k_o_slsh[]    = {KC_M, KC_K, KC_O, COMBO_END};
@@ -295,22 +295,22 @@ const uint16_t PROGMEM u_k_up_at[]     = {KC_U, KC_K, KC_UP, COMBO_END};
 const uint16_t PROGMEM h_k_ampr[]      = {KC_H, KC_K, COMBO_END};
 const uint16_t PROGMEM n_m_left_astr[] = {KC_N, KC_M, KC_LEFT, COMBO_END};
 // Symbols on number layer
-const uint16_t PROGMEM numslsh[] = {KC_7, KC_5, KC_3, COMBO_END};
-const uint16_t PROGMEM numbsls[] = {KC_1, KC_5, KC_9, COMBO_END};
-const uint16_t PROGMEM numpipe[] = {KC_2, KC_4, KC_0, COMBO_END};
-const uint16_t PROGMEM numcirc[] = {KC_4, KC_2, KC_6, COMBO_END};
-const uint16_t PROGMEM numlt[]   = {KC_2, KC_4, KC_DEL, COMBO_END};
-const uint16_t PROGMEM numgt[]   = {KC_1, KC_5, KC_BSPC, COMBO_END};
+const uint16_t PROGMEM numslsh[] = {KC_1, KC_5, KC_9, COMBO_END};
+const uint16_t PROGMEM numbsls[] = {KC_7, KC_5, KC_3, COMBO_END};
+const uint16_t PROGMEM numpipe[] = {KC_8, KC_4, KC_0, COMBO_END};
+const uint16_t PROGMEM numcirc[] = {KC_4, KC_8, KC_6, COMBO_END};
+const uint16_t PROGMEM numlt[]   = {KC_8, KC_4, KC_DEL, COMBO_END};
+const uint16_t PROGMEM numgt[]   = {KC_7, KC_5, KC_BSPC, COMBO_END};
 const uint16_t PROGMEM numgrv[]  = {KC_Y, KC_4, COMBO_END};
 const uint16_t PROGMEM numtild[] = {KC_4, KC_P, COMBO_END};
-const uint16_t PROGMEM numhash[] = {KC_Y, KC_1, KC_2, COMBO_END};
-const uint16_t PROGMEM numperc[] = {KC_1, KC_9, COMBO_END};
-const uint16_t PROGMEM numexlm[] = {KC_1, KC_2, KC_6, COMBO_END};
-const uint16_t PROGMEM numques[] = {KC_4, KC_5, KC_3, COMBO_END};
-const uint16_t PROGMEM numdlr[]  = {KC_7, KC_8, KC_3, COMBO_END};
-const uint16_t PROGMEM numat[]   = {KC_1, KC_5, KC_6, COMBO_END};
+const uint16_t PROGMEM numhash[] = {KC_Y, KC_7, KC_8, COMBO_END};
+const uint16_t PROGMEM numperc[] = {KC_7, KC_3, COMBO_END};
+const uint16_t PROGMEM numexlm[] = {KC_7, KC_8, KC_6, COMBO_END};
+const uint16_t PROGMEM numques[] = {KC_4, KC_5, KC_9, COMBO_END};
+const uint16_t PROGMEM numdlr[]  = {KC_1, KC_2, KC_9, COMBO_END};
+const uint16_t PROGMEM numat[]   = {KC_7, KC_5, KC_6, COMBO_END};
 const uint16_t PROGMEM numampr[] = {KC_H, KC_5, COMBO_END};
-const uint16_t PROGMEM numastr[] = {KC_N, KC_7, KC_8, COMBO_END};
+const uint16_t PROGMEM numastr[] = {KC_N, KC_1, KC_2, COMBO_END};
 
 // Control keys
 const uint16_t PROGMEM k_UP_L_ent[]    = {KC_K, KC_UP, KC_L, COMBO_END};
