@@ -18,7 +18,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include QMK_KEYBOARD_H
 #define KC_ KC_TRNS
-
+/*
+left column: esc, tab, ctrl
+bottom row thumb cluster : opt, cmd, shift, space, bksp, caps
+right collumn: volu, vold, enter
+*/
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {[0] = LAYOUT_split_3x6_3(
                                                                   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
                                                                   KC_LCTL, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_VOLU,
@@ -27,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {[0] = LAYOUT_split
                                                                   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
                                                                   KC_LGUI, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_LEFT, KC_DOWN, KC_RGHT, KC_MPLY,
                                                                   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                                                  KC_ESC, KC_CAPS, KC_LSFT, KC_BSPC, KC_SPC, KC_DEL
+                                                                  KC_ESC, KC_CAPS, KC_LSFT, KC_SPC, KC_BSPC, KC_DEL
                                                                   //`--------------------------'  `--------------------------'
                                                                   ),
 
@@ -263,27 +267,27 @@ const uint16_t PROGMEM h_4_5_plus[] = {KC_H, KC_4, KC_5, COMBO_END};
 const uint16_t PROGMEM n_7_unds[]   = {KC_N, KC_1, COMBO_END};
 
 // Parentheses
-const uint16_t PROGMEM bspc_u_lbrc[]    = {KC_BSPC, KC_U, COMBO_END};
-const uint16_t PROGMEM bspc_i_rbrc[]    = {KC_BSPC, KC_I, COMBO_END};
-const uint16_t PROGMEM bspc_j_lprn[]    = {KC_BSPC, KC_J, COMBO_END};
-const uint16_t PROGMEM bspc_k_rprn[]    = {KC_BSPC, KC_K, COMBO_END};
-const uint16_t PROGMEM bspc_m_lcbr[]    = {KC_BSPC, KC_M, COMBO_END};
-const uint16_t PROGMEM bspc_LEFT_rcbr[] = {KC_BSPC, KC_LEFT, COMBO_END};
+const uint16_t PROGMEM bspc_u_lbrc[]    = {KC_SPC, KC_U, COMBO_END};
+const uint16_t PROGMEM bspc_i_rbrc[]    = {KC_SPC, KC_I, COMBO_END};
+const uint16_t PROGMEM bspc_j_lprn[]    = {KC_SPC, KC_J, COMBO_END};
+const uint16_t PROGMEM bspc_k_rprn[]    = {KC_SPC, KC_K, COMBO_END};
+const uint16_t PROGMEM bspc_m_lcbr[]    = {KC_SPC, KC_M, COMBO_END};
+const uint16_t PROGMEM bspc_LEFT_rcbr[] = {KC_SPC, KC_LEFT, COMBO_END};
 // Number layer
-const uint16_t PROGMEM bspc_1_lbrc[] = {KC_BSPC, KC_7, COMBO_END};
-const uint16_t PROGMEM bspc_2_rbrc[] = {KC_BSPC, KC_8, COMBO_END};
-const uint16_t PROGMEM bspc_4_lprn[] = {KC_BSPC, KC_4, COMBO_END};
-const uint16_t PROGMEM bspc_5_rprn[] = {KC_BSPC, KC_5, COMBO_END};
-const uint16_t PROGMEM bspc_7_lcbr[] = {KC_BSPC, KC_1, COMBO_END};
-const uint16_t PROGMEM bspc_8_rcbr[] = {KC_BSPC, KC_2, COMBO_END};
+const uint16_t PROGMEM bspc_1_lbrc[] = {KC_SPC, KC_7, COMBO_END};
+const uint16_t PROGMEM bspc_2_rbrc[] = {KC_SPC, KC_8, COMBO_END};
+const uint16_t PROGMEM bspc_4_lprn[] = {KC_SPC, KC_4, COMBO_END};
+const uint16_t PROGMEM bspc_5_rprn[] = {KC_SPC, KC_5, COMBO_END};
+const uint16_t PROGMEM bspc_7_lcbr[] = {KC_SPC, KC_1, COMBO_END};
+const uint16_t PROGMEM bspc_8_rcbr[] = {KC_SPC, KC_2, COMBO_END};
 
 // Symbols
 const uint16_t PROGMEM m_k_o_slsh[]    = {KC_M, KC_K, KC_O, COMBO_END};
 const uint16_t PROGMEM u_k_DOWN_bsls[] = {KC_U, KC_K, KC_DOWN, COMBO_END};
-const uint16_t PROGMEM i_j_spc_pipe[]  = {KC_I, KC_J, KC_SPC, COMBO_END};
+const uint16_t PROGMEM i_j_spc_pipe[]  = {KC_I, KC_J, KC_BSPC, COMBO_END};
 const uint16_t PROGMEM j_i_UP_circ[]   = {KC_J, KC_I, KC_UP, COMBO_END};
 const uint16_t PROGMEM i_j_del_lt[]    = {KC_I, KC_J, KC_DEL, COMBO_END};
-const uint16_t PROGMEM u_k_bspc_gt[]   = {KC_U, KC_K, KC_BSPC, COMBO_END};
+const uint16_t PROGMEM u_k_bspc_gt[]   = {KC_U, KC_K, KC_SPC, COMBO_END};
 const uint16_t PROGMEM y_j_grv[]       = {KC_Y, KC_J, COMBO_END};
 const uint16_t PROGMEM j_p_tild[]      = {KC_J, KC_P, COMBO_END};
 const uint16_t PROGMEM y_u_i_hash[]    = {KC_Y, KC_U, KC_I, COMBO_END};
@@ -300,7 +304,7 @@ const uint16_t PROGMEM numbsls[] = {KC_7, KC_5, KC_3, COMBO_END};
 const uint16_t PROGMEM numpipe[] = {KC_8, KC_4, KC_0, COMBO_END};
 const uint16_t PROGMEM numcirc[] = {KC_4, KC_8, KC_6, COMBO_END};
 const uint16_t PROGMEM numlt[]   = {KC_8, KC_4, KC_DEL, COMBO_END};
-const uint16_t PROGMEM numgt[]   = {KC_7, KC_5, KC_BSPC, COMBO_END};
+const uint16_t PROGMEM numgt[]   = {KC_7, KC_5, KC_SPC, COMBO_END};
 const uint16_t PROGMEM numgrv[]  = {KC_Y, KC_4, COMBO_END};
 const uint16_t PROGMEM numtild[] = {KC_4, KC_P, COMBO_END};
 const uint16_t PROGMEM numhash[] = {KC_Y, KC_7, KC_8, COMBO_END};
@@ -323,7 +327,7 @@ const uint16_t PROGMEM u_i_o_home[]  = {KC_U, KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM i_o_p_end[]   = {KC_I, KC_O, KC_P, COMBO_END};
 const uint16_t PROGMEM h_up_pgup[]   = {KC_H, KC_UP, COMBO_END};
 const uint16_t PROGMEM n_down_pgdn[] = {KC_N, KC_DOWN, COMBO_END};
-const uint16_t PROGMEM spc_del_ins[] = {KC_SPC, KC_DEL, COMBO_END};
+const uint16_t PROGMEM spc_del_ins[] = {KC_BSPC, KC_DEL, COMBO_END};
 
 // Additional media keys
 const uint16_t PROGMEM p_volu_mprv[]    = {KC_P, KC_VOLU, COMBO_END};
