@@ -200,7 +200,6 @@ enum combos {
     K_UP_L_ENT,
     numENT,
     J_K_TAB,
-    V_B_LSFT_CAPS,
 
     // Navigation keys
     U_I_O_HOME,
@@ -320,7 +319,6 @@ const uint16_t PROGMEM numastr[] = {KC_N, KC_1, KC_2, COMBO_END};
 const uint16_t PROGMEM k_UP_L_ent[]    = {KC_K, KC_UP, KC_L, COMBO_END};
 const uint16_t PROGMEM nument[]        = {KC_5, KC_6, KC_L, COMBO_END};
 const uint16_t PROGMEM j_k_tab[]       = {KC_J, KC_K, COMBO_END};
-const uint16_t PROGMEM v_b_lsft_caps[] = {KC_V, KC_B, KC_LSFT, COMBO_END};
 
 // Navigation keys
 const uint16_t PROGMEM u_i_o_home[]  = {KC_U, KC_I, KC_O, COMBO_END};
@@ -437,7 +435,6 @@ combo_t key_combos[] = {
     [K_UP_L_ENT]    = COMBO(k_UP_L_ent, KC_ENT),
     [numENT]        = COMBO(nument, KC_ENT),
     [J_K_TAB]       = COMBO(j_k_tab, KC_TAB),
-    [V_B_LSFT_CAPS] = COMBO(v_b_lsft_caps, KC_CAPS),
 
     // Navigation keys
     [U_I_O_HOME]  = COMBO(u_i_o_home, KC_HOME),
